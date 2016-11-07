@@ -20,18 +20,10 @@ heading: 'Article one',
     content: `
     <p>`
     This is content for my first article. This is content for my first web app
-    </p> `
-    }
+</p>`
+    },
     
-   article two= { 
- title: 'article one | kalluri sai kalyan',
-heading: 'Article one',
-    date: 'Nov5,2016'
-    content: `
-    <p>`
-    This is content for my first article. This is content for my first web app
-    </p>
-   }
+   article two= {
   
     article three= {
      title: 'article three | Kalluri sai kalyan',
