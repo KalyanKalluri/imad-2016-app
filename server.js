@@ -1,48 +1,36 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var pool =require('pg').pool;
-var config =
-{
-    user:     'kalyan kalluri'
-    database: 'kalyan kalluri'
-    host: 'db.imad.hasura-app.io',
-    password: DB-password
-}''
-
 var app = express();
 app.use(morgan('combined'));
 
-var articles{
-    article one:{
+var articles={
+ {
+     article one;
     title: 'articleone | Kalluri sai kalyan',
     heading: 'Article one',
     date: 'Nov5,2016'
     content:
     <p>
     This is content for my first article. This is content for my first web app
-    </p>
-},
-    article two:{
+}
+   article two:{
+   {
         title: 'article two| Kalluri sai kalyan',
-    heading: 'Article one',
+    heading: 'Article two',
     date: 'Nov5,2016'
     content:
     <p>
     This is content for my second article. This is content for my first web app
-    </p>
-    },
+    }
     article three:{
         title: 'articlethree | Kalluri sai kalyan',
-    heading: 'Article one',
+    heading: 'Article three',
     date: 'Nov5,2016'
     content:
-    <p>
-    This is content for my third article. This is content for my first web app
-    </p>
+    <p> This is content for my third article. This is content for my first web app 
     },
           }
-
 function createTemplate(data){
     var title= data.title;
     var date = data.date;
