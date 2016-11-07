@@ -14,7 +14,7 @@ var config =
 var app = express();
 app.use(morgan('combined'));
 
-var articleone{
+var article{
     titile: 'articleone | Kalluri sai kalyan',
     heading: 'Article one',
     date: 'Nov5,2016'
