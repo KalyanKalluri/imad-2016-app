@@ -1,8 +1,6 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-app.get('/articleone', function(req,res){
-    res.send(createtemplate(articleone));
 });
 app.get('/articletwo', function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
