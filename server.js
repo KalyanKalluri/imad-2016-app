@@ -1,99 +1,10 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var pool =require('pg').pool;
-
-var config = {
-  user:     'kalyan kalluri',
-  database: 'kalyan kalluri',
-  host: 'db.imad.hasura-app.io',
-  port: "5432",
-  password: DB-password
-};
-var app = express();
-app.use(morgan('combined'));
-var articles = {
- article one= {
- title: 'article one | kalluri sai kalyan',
-heading: 'Article one',
-    date: 'Nov5,2016'
-    content: `
-    <p>`
-    This is content for my first article. This is content for my first web app
-</p>`
-    },
-    
-   article two= {
-  
-    article three= {
-     title: 'article three | Kalluri sai kalyan',
-heading: 'Article three',
-    date: 'Nov5,2016'
-    content: `
-    <p> `
-    This is content for third article. this is content for my first web app
-    </p>
-    }
-}
-function createTemplate(data){
-    var title= data.title;
-    var date = data.date;
-    var heading= data.heading;
-    var content= data.content;
- var html template=
-<html>
-<head>
-<title>
-${title}
-</title>
-<meta name="viewpoint" content="width=device-width,Initial-Scale=1"/>
-        <link href="/ui/style.css" rel="style sheet"/>
-        </head>
-        <body>
-        <divclass="container">
-        </div>
-         <a> href="/">Home</a>
-         </div>
-         <hr/>
-         <h3>
-         ${heading}
-         </h3>
-         <div>
-         ${date}
-         </div>
-         <div>
-         ${content}
-         </div>
-         </body>
-         </html>
-         ;
-         return html template
-}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-var pool = new Pool(config)
-app.get('test-db', function(req,res){
-    //make a select request
-    //return a response with the resulttx
-    pool,query('select * From test', function(err, result){
-        if(err){
-            res.status(500).send(err.tostring());
-        }else{
-            res.send(JSON.stringify(result));
-        }
-        }}
-});
-var counter=0;
-app.get('/counter', function(req,res){
-    counter=counter+1;
-    res.send(counter,tostring());
-});
-app.get('/articleone', function(req,res){
-    res.send(createtemplate(articleone);
-});
-
 app.get('/articletwo', function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
