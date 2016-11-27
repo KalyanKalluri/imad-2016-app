@@ -25,6 +25,60 @@ phone:9985929301
      </h1>
 <marquee bgcolor="Green" vspace="800" hspace="10">  This is my web app</marquee>
     </body>
-
-    
 </html>
+<form>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+<form action="action_page.php">
+  Email id: <input type="text" name="user">
+  <br>
+  Phoneno: <input type="text" name="user">
+  <br>
+  <input type="submit">
+</form>
+<form action="action_page.php">
+  <fieldset>
+    <legend>Personal information:</legend>
+    Qualification:<br>
+    <input type="text" name="firstname" value=""><br>
+    Specification:<br>
+    <input type="text" name="lastname" value=""><br><br>
+  </fieldset>
+</form>
+<select name="Industry">
+  <option value="IT">IT</option>
+  <option value="Software Testing">Software Testing</option>
+  <option value="Hardware Testing">Hardware Testing</option>
+  <option value="web design">web design</option>
+  <br>
+  <form action="action_page.php">
+  
+  </datalist> 
+</form>
+<form action="action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  <br>
+  <input type="range"  id="a" name="a" value="50000">
+  300000 +
+  <br>
+  <input type="number" id="b" name="b" value="50">
+  <br>
+  <output name="x" for="a b"></output>
+  <br>
+ 
+</form>
+<form>
+  User name:<br>
+  <input type="text" name="username"><br>
+  User password:<br>
+  <input type="password" name="psw">
+</form>
+ <input type="submit">
